@@ -1,0 +1,40 @@
+## roslynAnalyzer .gitignore
+# Ignore build outputs
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio / Rider
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+
+# NuGet / packages
+packages/
+*.nupkg
+
+# Visual Studio test results
+TestResults/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Resharper / Rider
+*.DotSettings.user
+
+# Generated/lock artifacts
+project.assets.json
+*.nuget.props
+*.nuget.targets

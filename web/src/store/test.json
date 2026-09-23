@@ -1,0 +1,494 @@
+[
+  {
+    "Children": [
+      {
+        "Type": "CodeBlock",
+        "StartLine": 4,
+        "EndLine": 4,
+        "Text": "Playground.Hello"
+      },
+      {
+        "Modifiers": "public",
+        "Name": "Person",
+        "Children": [
+          {
+            "Type": "CodeBlock",
+            "StartLine": 8,
+            "EndLine": 8,
+            "Text": "public string Name { get; }"
+          },
+          {
+            "ReturnType": null,
+            "Parameters": [
+              "string name"
+            ],
+            "Modifiers": "public",
+            "Name": "Person",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 11,
+                "EndLine": 11,
+                "Text": "=\u003E Name = name"
+              }
+            ],
+            "Type": "Constructor",
+            "StartLine": 11,
+            "EndLine": 11,
+            "Text": "=\u003E Name = name"
+          },
+          {
+            "ReturnType": null,
+            "Parameters": [],
+            "Modifiers": "public",
+            "Name": "Person",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 13,
+                "EndLine": 13,
+                "Text": "{ Name = \u0022Unknown\u0022; }"
+              }
+            ],
+            "Type": "Constructor",
+            "StartLine": 13,
+            "EndLine": 13,
+            "Text": "{ Name = \u0022Unknown\u0022; }"
+          }
+        ],
+        "Type": "Class",
+        "StartLine": 6,
+        "EndLine": 14,
+        "Text": "public class Person\r\n    {\r\n        public string Name { get; }\r\n\r\n        // expression-bodied constructor\r\n        public Person(string name) =\u003E Name = name;\r\n\r\n        public Person() { Name = \u0022Unknown\u0022; }\r\n    }"
+      },
+      {
+        "Modifiers": "public",
+        "Name": "Program",
+        "Children": [
+          {
+            "ReturnType": "int",
+            "Parameters": [
+              "int x"
+            ],
+            "Modifiers": "public static",
+            "Name": "Square",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 18,
+                "EndLine": 18,
+                "Text": "=\u003E x * x"
+              }
+            ],
+            "Type": "Method",
+            "StartLine": 18,
+            "EndLine": 18,
+            "Text": "=\u003E x * x"
+          },
+          {
+            "ReturnType": null,
+            "Parameters": [],
+            "Modifiers": "public",
+            "Name": "Program",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 20,
+                "EndLine": 20,
+                "Text": "=\u003E Console.WriteLine(\u0022Program constructed (expression-bodied constructor)\u0022)"
+              }
+            ],
+            "Type": "Constructor",
+            "StartLine": 20,
+            "EndLine": 20,
+            "Text": "=\u003E Console.WriteLine(\u0022Program constructed (expression-bodied constructor)\u0022)"
+          },
+          {
+            "ReturnType": "void",
+            "Parameters": [
+              "string[] args"
+            ],
+            "Modifiers": "static",
+            "Name": "Main",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 24,
+                "EndLine": 30,
+                "Text": "var person = new Person(\u0022Alice\u0022);\n\n\nPrintGreeting(person.Name);\n\n\nControlFlowExamples();"
+              },
+              {
+                "ReturnType": "void",
+                "Parameters": [],
+                "Modifiers": "",
+                "Name": "LocalBlockFunction",
+                "Children": [
+                  {
+                    "Condition": "person.Name == \u0022Alice\u0022",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 37,
+                        "EndLine": 37,
+                        "Text": "Console.WriteLine(\u0022Hello Alice (local function)\u0022);"
+                      }
+                    ],
+                    "Type": "If",
+                    "StartLine": 36,
+                    "EndLine": 38,
+                    "Text": "{\r\n                    Console.WriteLine(\u0022Hello Alice (local function)\u0022);\r\n                }"
+                  },
+                  {
+                    "Condition": "person.Name == \u0022Bob\u0022",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 37,
+                        "EndLine": 37,
+                        "Text": "Console.WriteLine(\u0022Hello Alice (local function)\u0022);"
+                      }
+                    ],
+                    "Type": "ElseIf",
+                    "StartLine": 40,
+                    "EndLine": 42,
+                    "Text": "{\r\n                    Console.WriteLine(\u0022Hello Bob (local function)\u0022);\r\n                }"
+                  },
+                  {
+                    "Condition": "",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 37,
+                        "EndLine": 37,
+                        "Text": "Console.WriteLine(\u0022Hello Alice (local function)\u0022);"
+                      }
+                    ],
+                    "Type": "Else",
+                    "StartLine": 44,
+                    "EndLine": 46,
+                    "Text": "{\r\n                    Console.WriteLine(\u0022Hello stranger (local function)\u0022);\r\n                }"
+                  },
+                  {
+                    "Condition": "i \u003C 3",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 49,
+                        "EndLine": 51,
+                        "Text": "{\r\n                    Console.WriteLine($\u0022Local loop i={i}\u0022);\r\n                }"
+                      }
+                    ],
+                    "Type": "For",
+                    "StartLine": 49,
+                    "EndLine": 51,
+                    "Text": "{\r\n                    Console.WriteLine($\u0022Local loop i={i}\u0022);\r\n                }"
+                  },
+                  {
+                    "Condition": "person.Name",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 53,
+                        "EndLine": 53,
+                        "Text": "Console.Write(c);"
+                      }
+                    ],
+                    "Type": "ForEach",
+                    "StartLine": 53,
+                    "EndLine": 53,
+                    "Text": "Console.Write(c);"
+                  },
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 55,
+                    "EndLine": 55,
+                    "Text": "Console.WriteLine();"
+                  }
+                ],
+                "Type": "LocalFunction",
+                "StartLine": 34,
+                "EndLine": 56,
+                "Text": "{\r\n                if (person.Name == \u0022Alice\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Alice (local function)\u0022);\r\n                }\r\n                else if (person.Name == \u0022Bob\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Bob (local function)\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022Hello stranger (local function)\u0022);\r\n                }\r\n\r\n                for (int i = 0; i \u003C 3; i\u002B\u002B)\r\n                {\r\n                    Console.WriteLine($\u0022Local loop i={i}\u0022);\r\n                } // foreach over string (char)\r\n                foreach (var c in person.Name)\r\n                    Console.Write(c);\r\n\r\n                Console.WriteLine();\r\n            }"
+              },
+              {
+                "Type": "CodeBlock",
+                "StartLine": 58,
+                "EndLine": 58,
+                "Text": "LocalBlockFunction();"
+              },
+              {
+                "ReturnType": "int",
+                "Parameters": [
+                  "int a",
+                  "int b"
+                ],
+                "Modifiers": "",
+                "Name": "Add",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 61,
+                    "EndLine": 61,
+                    "Text": "=\u003E a \u002B b"
+                  }
+                ],
+                "Type": "LocalFunction",
+                "StartLine": 61,
+                "EndLine": 61,
+                "Text": "=\u003E a \u002B b"
+              },
+              {
+                "Type": "CodeBlock",
+                "StartLine": 62,
+                "EndLine": 62,
+                "Text": "Console.WriteLine($\u0022Add local (expression-bodied): {Add(2, 3)}\u0022);"
+              }
+            ],
+            "Type": "Method",
+            "StartLine": 23,
+            "EndLine": 63,
+            "Text": "{\r\n            var person = new Person(\u0022Alice\u0022);\r\n\r\n            // call method with block body\r\n            PrintGreeting(person.Name);\r\n\r\n            // method containing various constructs\r\n            ControlFlowExamples();\r\n\r\n            // local function (block-bodied)\r\n            void LocalBlockFunction()\r\n            {\r\n                if (person.Name == \u0022Alice\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Alice (local function)\u0022);\r\n                }\r\n                else if (person.Name == \u0022Bob\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Bob (local function)\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022Hello stranger (local function)\u0022);\r\n                }\r\n\r\n                for (int i = 0; i \u003C 3; i\u002B\u002B)\r\n                {\r\n                    Console.WriteLine($\u0022Local loop i={i}\u0022);\r\n                } // foreach over string (char)\r\n                foreach (var c in person.Name)\r\n                    Console.Write(c);\r\n\r\n                Console.WriteLine();\r\n            }\r\n\r\n            LocalBlockFunction();\r\n\r\n            // local function (expression-bodied)\r\n            int Add(int a, int b) =\u003E a \u002B b;\r\n            Console.WriteLine($\u0022Add local (expression-bodied): {Add(2, 3)}\u0022);\r\n        }"
+          },
+          {
+            "ReturnType": "void",
+            "Parameters": [
+              "string name"
+            ],
+            "Modifiers": "static",
+            "Name": "PrintGreeting",
+            "Children": [
+              {
+                "Condition": "name.StartsWith(\u0022A\u0022)",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 70,
+                    "EndLine": 70,
+                    "Text": "Console.WriteLine(\u0022Starts with A\u0022);"
+                  }
+                ],
+                "Type": "If",
+                "StartLine": 69,
+                "EndLine": 71,
+                "Text": "{\r\n                Console.WriteLine(\u0022Starts with A\u0022);\r\n            }"
+              },
+              {
+                "Condition": "name.Length \u003E 4",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 70,
+                    "EndLine": 70,
+                    "Text": "Console.WriteLine(\u0022Starts with A\u0022);"
+                  }
+                ],
+                "Type": "ElseIf",
+                "StartLine": 73,
+                "EndLine": 75,
+                "Text": "{\r\n                Console.WriteLine(\u0022Long name\u0022);\r\n            }"
+              },
+              {
+                "Condition": "",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 70,
+                    "EndLine": 70,
+                    "Text": "Console.WriteLine(\u0022Starts with A\u0022);"
+                  }
+                ],
+                "Type": "Else",
+                "StartLine": 77,
+                "EndLine": 79,
+                "Text": "{\r\n                Console.WriteLine(\u0022Other name\u0022);\r\n            }"
+              }
+            ],
+            "Type": "Method",
+            "StartLine": 66,
+            "EndLine": 80,
+            "Text": "{\r\n            // nested if/else-if/else chain\r\n            if (name.StartsWith(\u0022A\u0022))\r\n            {\r\n                Console.WriteLine(\u0022Starts with A\u0022);\r\n            }\r\n            else if (name.Length \u003E 4)\r\n            {\r\n                Console.WriteLine(\u0022Long name\u0022);\r\n            }\r\n            else\r\n            {\r\n                Console.WriteLine(\u0022Other name\u0022);\r\n            }\r\n        }"
+          },
+          {
+            "ReturnType": "void",
+            "Parameters": [],
+            "Modifiers": "static",
+            "Name": "ControlFlowExamples",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 83,
+                "EndLine": 83,
+                "Text": "var list = new List\u003Cint\u003E { 1, 2, 3, 4 };"
+              },
+              {
+                "Condition": "i \u003C list.Count",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 87,
+                    "EndLine": 89,
+                    "Text": "{\r\n                Console.WriteLine($\u0022for index {i} =\u003E {list[i]}\u0022);\r\n            }"
+                  }
+                ],
+                "Type": "For",
+                "StartLine": 87,
+                "EndLine": 89,
+                "Text": "{\r\n                Console.WriteLine($\u0022for index {i} =\u003E {list[i]}\u0022);\r\n            }"
+              },
+              {
+                "Condition": "list",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 93,
+                    "EndLine": 95,
+                    "Text": "{\r\n                Console.WriteLine($\u0022foreach item {item}\u0022);\r\n            }"
+                  }
+                ],
+                "Type": "ForEach",
+                "StartLine": 93,
+                "EndLine": 95,
+                "Text": "{\r\n                Console.WriteLine($\u0022foreach item {item}\u0022);\r\n            }"
+              },
+              {
+                "Type": "CodeBlock",
+                "StartLine": 98,
+                "EndLine": 98,
+                "Text": "var pairs = new List\u003C(string, int)\u003E() { (\u0022a\u0022, 1), (\u0022b\u0022, 2) };"
+              },
+              {
+                "Condition": "var (k, v) in pairs",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 100,
+                    "EndLine": 102,
+                    "Text": "{\r\n                Console.WriteLine($\u0022pair: {k} -\u003E {v}\u0022);\r\n            }"
+                  }
+                ],
+                "Type": "ForEach",
+                "StartLine": 100,
+                "EndLine": 102,
+                "Text": "{\r\n                Console.WriteLine($\u0022pair: {k} -\u003E {v}\u0022);\r\n            }"
+              },
+              {
+                "Type": "CodeBlock",
+                "StartLine": 105,
+                "EndLine": 105,
+                "Text": "int counter = 0;"
+              },
+              {
+                "Condition": "counter \u003C 2",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 107,
+                    "EndLine": 110,
+                    "Text": "{\r\n                Console.WriteLine($\u0022while counter={counter}\u0022);\r\n                counter\u002B\u002B;\r\n            }"
+                  }
+                ],
+                "Type": "While",
+                "StartLine": 107,
+                "EndLine": 110,
+                "Text": "{\r\n                Console.WriteLine($\u0022while counter={counter}\u0022);\r\n                counter\u002B\u002B;\r\n            }"
+              },
+              {
+                "Type": "CodeBlock",
+                "StartLine": 113,
+                "EndLine": 113,
+                "Text": "int dw = 2;"
+              },
+              {
+                "Condition": "dw \u003E 0",
+                "Children": [
+                  {
+                    "Type": "CodeBlock",
+                    "StartLine": 115,
+                    "EndLine": 118,
+                    "Text": "{\r\n                Console.WriteLine($\u0022do-while dw={dw}\u0022);\r\n                dw--;\r\n            }"
+                  }
+                ],
+                "Type": "DoWhile",
+                "StartLine": 115,
+                "EndLine": 118,
+                "Text": "{\r\n                Console.WriteLine($\u0022do-while dw={dw}\u0022);\r\n                dw--;\r\n            }"
+              },
+              {
+                "Condition": "i \u003C 2",
+                "Children": [
+                  {
+                    "Condition": "i % 2 == 0",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 125,
+                        "EndLine": 125,
+                        "Text": "Console.WriteLine(\u0022even in nested for\u0022);"
+                      }
+                    ],
+                    "Type": "If",
+                    "StartLine": 124,
+                    "EndLine": 126,
+                    "Text": "{\r\n                    Console.WriteLine(\u0022even in nested for\u0022);\r\n                }"
+                  },
+                  {
+                    "Condition": "",
+                    "Children": [
+                      {
+                        "Type": "CodeBlock",
+                        "StartLine": 125,
+                        "EndLine": 125,
+                        "Text": "Console.WriteLine(\u0022even in nested for\u0022);"
+                      }
+                    ],
+                    "Type": "Else",
+                    "StartLine": 128,
+                    "EndLine": 130,
+                    "Text": "{\r\n                    Console.WriteLine(\u0022odd in nested for\u0022);\r\n                }"
+                  }
+                ],
+                "Type": "For",
+                "StartLine": 122,
+                "EndLine": 131,
+                "Text": "{\r\n                if (i % 2 == 0)\r\n                {\r\n                    Console.WriteLine(\u0022even in nested for\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022odd in nested for\u0022);\r\n                }\r\n            }"
+              }
+            ],
+            "Type": "Method",
+            "StartLine": 82,
+            "EndLine": 132,
+            "Text": "{\r\n            var list = new List\u003Cint\u003E { 1, 2, 3, 4 };\r\n\r\n            // for\r\n            for (int i = 0; i \u003C list.Count; i\u002B\u002B)\r\n            {\r\n                Console.WriteLine($\u0022for index {i} =\u003E {list[i]}\u0022);\r\n            }\r\n\r\n            // foreach (standard)\r\n            foreach (var item in list)\r\n            {\r\n                Console.WriteLine($\u0022foreach item {item}\u0022);\r\n            }\r\n\r\n            // foreach with deconstruction (ForEachVariable)\r\n            var pairs = new List\u003C(string, int)\u003E() { (\u0022a\u0022, 1), (\u0022b\u0022, 2) };\r\n            foreach (var (k, v) in pairs)\r\n            {\r\n                Console.WriteLine($\u0022pair: {k} -\u003E {v}\u0022);\r\n            }\r\n\r\n            // while\r\n            int counter = 0;\r\n            while (counter \u003C 2)\r\n            {\r\n                Console.WriteLine($\u0022while counter={counter}\u0022);\r\n                counter\u002B\u002B;\r\n            }\r\n\r\n            // do-while\r\n            int dw = 2;\r\n            do\r\n            {\r\n                Console.WriteLine($\u0022do-while dw={dw}\u0022);\r\n                dw--;\r\n            } while (dw \u003E 0);\r\n\r\n            // nested control structures\r\n            for (int i = 0; i \u003C 2; i\u002B\u002B)\r\n            {\r\n                if (i % 2 == 0)\r\n                {\r\n                    Console.WriteLine(\u0022even in nested for\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022odd in nested for\u0022);\r\n                }\r\n            }\r\n        }"
+          },
+          {
+            "ReturnType": "int",
+            "Parameters": [
+              "int a",
+              "int b"
+            ],
+            "Modifiers": "public",
+            "Name": "Multiply",
+            "Children": [
+              {
+                "Type": "CodeBlock",
+                "StartLine": 135,
+                "EndLine": 137,
+                "Text": "{\r\n            return a * b;\r\n        }"
+              }
+            ],
+            "Type": "Method",
+            "StartLine": 135,
+            "EndLine": 137,
+            "Text": "{\r\n            return a * b;\r\n        }"
+          }
+        ],
+        "Type": "Class",
+        "StartLine": 15,
+        "EndLine": 138,
+        "Text": "public class Program\r\n    {\r\n        // expression-bodied method\r\n        public static int Square(int x) =\u003E x * x;\r\n\r\n        public Program() =\u003E Console.WriteLine(\u0022Program constructed (expression-bodied constructor)\u0022);\r\n\r\n        static void Main(string[] args)\r\n        {\r\n            var person = new Person(\u0022Alice\u0022);\r\n\r\n            // call method with block body\r\n            PrintGreeting(person.Name);\r\n\r\n            // method containing various constructs\r\n            ControlFlowExamples();\r\n\r\n            // local function (block-bodied)\r\n            void LocalBlockFunction()\r\n            {\r\n                if (person.Name == \u0022Alice\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Alice (local function)\u0022);\r\n                }\r\n                else if (person.Name == \u0022Bob\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Bob (local function)\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022Hello stranger (local function)\u0022);\r\n                }\r\n\r\n                for (int i = 0; i \u003C 3; i\u002B\u002B)\r\n                {\r\n                    Console.WriteLine($\u0022Local loop i={i}\u0022);\r\n                } // foreach over string (char)\r\n                foreach (var c in person.Name)\r\n                    Console.Write(c);\r\n\r\n                Console.WriteLine();\r\n            }\r\n\r\n            LocalBlockFunction();\r\n\r\n            // local function (expression-bodied)\r\n            int Add(int a, int b) =\u003E a \u002B b;\r\n            Console.WriteLine($\u0022Add local (expression-bodied): {Add(2, 3)}\u0022);\r\n        }\r\n\r\n        static void PrintGreeting(string name)\r\n        {\r\n            // nested if/else-if/else chain\r\n            if (name.StartsWith(\u0022A\u0022))\r\n            {\r\n                Console.WriteLine(\u0022Starts with A\u0022);\r\n            }\r\n            else if (name.Length \u003E 4)\r\n            {\r\n                Console.WriteLine(\u0022Long name\u0022);\r\n            }\r\n            else\r\n            {\r\n                Console.WriteLine(\u0022Other name\u0022);\r\n            }\r\n        }\r\n        static void ControlFlowExamples()\r\n        {\r\n            var list = new List\u003Cint\u003E { 1, 2, 3, 4 };\r\n\r\n            // for\r\n            for (int i = 0; i \u003C list.Count; i\u002B\u002B)\r\n            {\r\n                Console.WriteLine($\u0022for index {i} =\u003E {list[i]}\u0022);\r\n            }\r\n\r\n            // foreach (standard)\r\n            foreach (var item in list)\r\n            {\r\n                Console.WriteLine($\u0022foreach item {item}\u0022);\r\n            }\r\n\r\n            // foreach with deconstruction (ForEachVariable)\r\n            var pairs = new List\u003C(string, int)\u003E() { (\u0022a\u0022, 1), (\u0022b\u0022, 2) };\r\n            foreach (var (k, v) in pairs)\r\n            {\r\n                Console.WriteLine($\u0022pair: {k} -\u003E {v}\u0022);\r\n            }\r\n\r\n            // while\r\n            int counter = 0;\r\n            while (counter \u003C 2)\r\n            {\r\n                Console.WriteLine($\u0022while counter={counter}\u0022);\r\n                counter\u002B\u002B;\r\n            }\r\n\r\n            // do-while\r\n            int dw = 2;\r\n            do\r\n            {\r\n                Console.WriteLine($\u0022do-while dw={dw}\u0022);\r\n                dw--;\r\n            } while (dw \u003E 0);\r\n\r\n            // nested control structures\r\n            for (int i = 0; i \u003C 2; i\u002B\u002B)\r\n            {\r\n                if (i % 2 == 0)\r\n                {\r\n                    Console.WriteLine(\u0022even in nested for\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022odd in nested for\u0022);\r\n                }\r\n            }\r\n        }\r\n        // regular method with block body\r\n        public int Multiply(int a, int b)\r\n        {\r\n            return a * b;\r\n        }\r\n    }"
+      }
+    ],
+    "Type": "Namespace",
+    "StartLine": 4,
+    "EndLine": 139,
+    "Text": "namespace Playground.Hello\r\n{\r\n    public class Person\r\n    {\r\n        public string Name { get; }\r\n\r\n        // expression-bodied constructor\r\n        public Person(string name) =\u003E Name = name;\r\n\r\n        public Person() { Name = \u0022Unknown\u0022; }\r\n    }\r\n    public class Program\r\n    {\r\n        // expression-bodied method\r\n        public static int Square(int x) =\u003E x * x;\r\n\r\n        public Program() =\u003E Console.WriteLine(\u0022Program constructed (expression-bodied constructor)\u0022);\r\n\r\n        static void Main(string[] args)\r\n        {\r\n            var person = new Person(\u0022Alice\u0022);\r\n\r\n            // call method with block body\r\n            PrintGreeting(person.Name);\r\n\r\n            // method containing various constructs\r\n            ControlFlowExamples();\r\n\r\n            // local function (block-bodied)\r\n            void LocalBlockFunction()\r\n            {\r\n                if (person.Name == \u0022Alice\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Alice (local function)\u0022);\r\n                }\r\n                else if (person.Name == \u0022Bob\u0022)\r\n                {\r\n                    Console.WriteLine(\u0022Hello Bob (local function)\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022Hello stranger (local function)\u0022);\r\n                }\r\n\r\n                for (int i = 0; i \u003C 3; i\u002B\u002B)\r\n                {\r\n                    Console.WriteLine($\u0022Local loop i={i}\u0022);\r\n                } // foreach over string (char)\r\n                foreach (var c in person.Name)\r\n                    Console.Write(c);\r\n\r\n                Console.WriteLine();\r\n            }\r\n\r\n            LocalBlockFunction();\r\n\r\n            // local function (expression-bodied)\r\n            int Add(int a, int b) =\u003E a \u002B b;\r\n            Console.WriteLine($\u0022Add local (expression-bodied): {Add(2, 3)}\u0022);\r\n        }\r\n\r\n        static void PrintGreeting(string name)\r\n        {\r\n            // nested if/else-if/else chain\r\n            if (name.StartsWith(\u0022A\u0022))\r\n            {\r\n                Console.WriteLine(\u0022Starts with A\u0022);\r\n            }\r\n            else if (name.Length \u003E 4)\r\n            {\r\n                Console.WriteLine(\u0022Long name\u0022);\r\n            }\r\n            else\r\n            {\r\n                Console.WriteLine(\u0022Other name\u0022);\r\n            }\r\n        }\r\n        static void ControlFlowExamples()\r\n        {\r\n            var list = new List\u003Cint\u003E { 1, 2, 3, 4 };\r\n\r\n            // for\r\n            for (int i = 0; i \u003C list.Count; i\u002B\u002B)\r\n            {\r\n                Console.WriteLine($\u0022for index {i} =\u003E {list[i]}\u0022);\r\n            }\r\n\r\n            // foreach (standard)\r\n            foreach (var item in list)\r\n            {\r\n                Console.WriteLine($\u0022foreach item {item}\u0022);\r\n            }\r\n\r\n            // foreach with deconstruction (ForEachVariable)\r\n            var pairs = new List\u003C(string, int)\u003E() { (\u0022a\u0022, 1), (\u0022b\u0022, 2) };\r\n            foreach (var (k, v) in pairs)\r\n            {\r\n                Console.WriteLine($\u0022pair: {k} -\u003E {v}\u0022);\r\n            }\r\n\r\n            // while\r\n            int counter = 0;\r\n            while (counter \u003C 2)\r\n            {\r\n                Console.WriteLine($\u0022while counter={counter}\u0022);\r\n                counter\u002B\u002B;\r\n            }\r\n\r\n            // do-while\r\n            int dw = 2;\r\n            do\r\n            {\r\n                Console.WriteLine($\u0022do-while dw={dw}\u0022);\r\n                dw--;\r\n            } while (dw \u003E 0);\r\n\r\n            // nested control structures\r\n            for (int i = 0; i \u003C 2; i\u002B\u002B)\r\n            {\r\n                if (i % 2 == 0)\r\n                {\r\n                    Console.WriteLine(\u0022even in nested for\u0022);\r\n                }\r\n                else\r\n                {\r\n                    Console.WriteLine(\u0022odd in nested for\u0022);\r\n                }\r\n            }\r\n        }\r\n        // regular method with block body\r\n        public int Multiply(int a, int b)\r\n        {\r\n            return a * b;\r\n        }\r\n    }\r\n}"
+  }
+]
