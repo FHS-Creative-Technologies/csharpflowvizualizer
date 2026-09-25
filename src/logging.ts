@@ -4,7 +4,7 @@ let outputChannel: vscode.OutputChannel | undefined;
 
 export function getOutputChannel(): vscode.OutputChannel {
     if (!outputChannel) {
-        outputChannel = vscode.window.createOutputChannel('C# Visualizer');
+        outputChannel = vscode.window.createOutputChannel('C# Flow Visualizer');
     }
 
     return outputChannel;

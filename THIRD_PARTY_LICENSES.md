@@ -1,6 +1,6 @@
 # Third-Party Licenses
 
-C# Visualizer bundles the following third-party software.
+C# Flow Visualizer bundles the following third-party software.
 
 ## Microsoft.CodeAnalysis.Common@5.0.0
 

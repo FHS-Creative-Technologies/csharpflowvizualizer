@@ -1,6 +1,6 @@
 {
-  "name": "csharpvisualizer",
-  "displayName": "C# Visualizer",
+  "name": "csharp-flow-visualizer",
+  "displayName": "C# Flow Visualizer",
   "description": "Visualize C# code structure in a flowchart style",
   "version": "0.0.6",
   "license": "MIT",
@@ -48,8 +48,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "csharpvisualizer.webview",
-        "category": "C# Visualizer",
+        "command": "csharpFlowVisualizer.open",
+        "category": "C# Flow Visualizer",
         "title": "Open Visualizer"
       }
     ]

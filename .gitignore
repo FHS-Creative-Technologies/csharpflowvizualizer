@@ -1,4 +1,4 @@
-csharpvisualizer-*.vsix
+*.vsix
 node_modules/
 analyzer-dist/
 out/

@@ -7,7 +7,7 @@ import { getOutputChannel } from './logging';
 let refreshDebounceHandle: ReturnType<typeof setTimeout> | undefined;
 
 /**
- * Activates the C# Visualizer extension
+ * Activates the C# Flow Visualizer extension
  */
 export function activate(context: vscode.ExtensionContext): void {
 	context.subscriptions.push(getOutputChannel());
@@ -55,7 +55,7 @@ function scheduleAutoRefresh(editor: vscode.TextEditor | undefined): void {
  * Registers extension commands
  */
 export function registerCommands(context: vscode.ExtensionContext): void {
-	const webviewCmd = vscode.commands.registerCommand('csharpvisualizer.webview', async () => {
+	const webviewCmd = vscode.commands.registerCommand('csharpFlowVisualizer.open', async () => {
 		await openWebviewPanel(context);
 	});
 

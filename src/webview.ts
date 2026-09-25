@@ -72,7 +72,7 @@ export async function refreshVisualization(): Promise<void> {
 }
 
 /**
- * Opens the C# Visualizer webview panel
+ * Opens the C# Flow Visualizer webview panel
  */
 export async function openWebviewPanel(context: vscode.ExtensionContext): Promise<void> {
     initializeEditor();
@@ -85,8 +85,8 @@ export async function openWebviewPanel(context: vscode.ExtensionContext): Promis
 
     // Create webview panel
     globalPanel = vscode.window.createWebviewPanel(
-        'csharpVisualizer',
-        'C# Visualizer',
+        'csharpFlowVisualizer',
+        'C# Flow Visualizer',
         vscode.ViewColumn.Two,
         {
             enableScripts: true,
@@ -95,10 +95,10 @@ export async function openWebviewPanel(context: vscode.ExtensionContext): Promis
         }
     );
 
-    logInfo('Opened C# Visualizer webview panel.');
+    logInfo('Opened C# Flow Visualizer webview panel.');
 
     globalPanel.onDidDispose(() => {
-        logInfo('C# Visualizer webview panel disposed.');
+        logInfo('C# Flow Visualizer webview panel disposed.');
         globalPanel = undefined;
     });
 

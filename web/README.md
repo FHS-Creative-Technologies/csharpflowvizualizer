@@ -1,6 +1,6 @@
 # Webview Frontend
 
-This package contains the React-based UI for the C# Visualizer VS Code extension. It is bundled with Vite and loaded into a VS Code webview after the extension rewrites the built asset URLs to webview-safe resource paths.
+This package contains the React-based UI for the C# Flow Visualizer VS Code extension. It is bundled with Vite and loaded into a VS Code webview after the extension rewrites the built asset URLs to webview-safe resource paths.
 
 ## Responsibilities
 

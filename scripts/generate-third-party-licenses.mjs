@@ -133,7 +133,7 @@ const sections = entries.map((entry) => {
 const content = [
   "# Third-Party Licenses",
   "",
-  "C# Visualizer bundles the following third-party software.",
+  "C# Flow Visualizer bundles the following third-party software.",
   "",
   sections.join("\n\n"),
   "",

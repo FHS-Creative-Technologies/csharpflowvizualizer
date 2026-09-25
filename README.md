@@ -1,6 +1,6 @@
-# C# Visualizer
+# C# Flow Visualizer
 
-C# Visualizer is a Visual Studio Code extension that turns the currently open C# file into an interactive structure graph. It is designed to help you inspect code organization, follow control flow at a high level, and move quickly between the graph and the editor.
+C# Flow Visualizer is a Visual Studio Code extension that turns the currently open C# file into an interactive structure graph. It is designed to help you inspect code organization, follow control flow at a high level, and move quickly between the graph and the editor.
 
 ## Features
 
@@ -22,7 +22,7 @@ Before using the extension, make sure the following are available:
 
 1. Open a C# source file in VS Code.
 2. Open the Command Palette.
-3. Run `C# Visualizer: Open Visualizer`.
+3. Run `C# Flow Visualizer: Open Visualizer`.
 4. Inspect the generated graph in the webview panel.
 5. Click a node to jump to the corresponding code, or move the cursor in the editor to update the highlighted element.
 
@@ -79,10 +79,10 @@ cd csharpvizualizer
 npm install
 npx @vscode/vsce package
 ```
-The result is `csharpvisualizer-<version>.vsix` in the repository root. To try it out locally:
+The result is `csharp-flow-visualizer-<version>.vsix` in the repository root. To try it out locally:
 
 ```bash
-code --install-extension csharpvisualizer-<version>.vsix
+code --install-extension csharp-flow-visualizer-<version>.vsix
 ```
 
 ## Project Structure
@@ -96,3 +96,10 @@ code --install-extension csharpvisualizer-<version>.vsix
 ## License
 
 This project is licensed under the MIT License.
+
+## Attribution
+
+Thanks to [Christine Bell](https://github.com/chrtbe) for the huge effort in developing this
+VS Code extension.
+
+Further development will taken place under FH Salzburg, Department Creative Technologies.

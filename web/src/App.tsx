@@ -48,7 +48,7 @@ export default function App() {
                 </span>
                 <div className='space-y-2'>
                   <h1 className='text-3xl font-semibold text-foreground md:text-[2rem]'>
-                    C# Visualizer
+                    C# Flow Visualizer
                   </h1>
                   <p className='max-w-sm text-sm  text-muted-foreground'>
                     Inspect the structure of the active C# file, follow control flow, and keep graph focus aligned with the editor selection.
