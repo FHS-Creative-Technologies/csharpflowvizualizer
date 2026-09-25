@@ -55,6 +55,7 @@
     ]
   },
   "scripts": {
+    "postinstall": "npm --prefix ./web install",
     "build:web": "npm --prefix ./web run build",
     "build:analyzer": "node ./scripts/build-analyzer.mjs",
     "licenses": "node ./scripts/generate-third-party-licenses.mjs",

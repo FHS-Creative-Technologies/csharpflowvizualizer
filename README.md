@@ -53,7 +53,6 @@ If you want to build or modify the extension locally:
 
 ```bash
 npm install
-npm --prefix ./web install
 npm run build:web
 npm run build:analyzer
 npm run compile
@@ -65,10 +64,25 @@ For local extension development in VS Code:
 2. Press `F5` to open an Extension Development Host.
 3. Open a `.cs` file and run the extension command.
 
-To create a VSIX package:
+## Packaging
+
+### Prerequisites
+
+- Node.js 24 (see `mise.toml`)
+- .NET 9 SDK or newer, used to publish the Roslyn analyzer
+
+### From a fresh clone to a VSIX package
 
 ```bash
+git clone https://github.com/FHS-Creative-Technologies/csharpvizualizer.git
+cd csharpvizualizer
+npm install
 npx @vscode/vsce package
+```
+The result is `csharpvisualizer-<version>.vsix` in the repository root. To try it out locally:
+
+```bash
+code --install-extension csharpvisualizer-<version>.vsix
 ```
 
 ## Project Structure
