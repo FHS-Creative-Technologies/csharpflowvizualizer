@@ -74,8 +74,8 @@ For local extension development in VS Code:
 ### From a fresh clone to a VSIX package
 
 ```bash
-git clone https://github.com/FHS-Creative-Technologies/csharpvizualizer.git
-cd csharpvizualizer
+git clone https://github.com/FHS-Creative-Technologies/csharpflowvizualizer.git
+cd csharpflowvizualizer
 npm install
 npx @vscode/vsce package
 ```
@@ -102,4 +102,4 @@ This project is licensed under the MIT License.
 Thanks to [Christine Bell](https://github.com/chrtbe) for the huge effort in developing this
 VS Code extension.
 
-Further development will taken place under FH Salzburg, Department Creative Technologies.
+Further development will take place under FH Salzburg, Department Creative Technologies.
