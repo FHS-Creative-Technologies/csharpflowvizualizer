@@ -16,13 +16,13 @@ Before using the extension, make sure the following are available:
 
 - Visual Studio Code `1.108.1` or newer.
 - A `.cs` file open in the active editor.
-- `.NET 9` runtime or SDK available on your `PATH`, because the extension launches a Roslyn-based analyzer through `dotnet`.
+- `.NET 9` (or newer) runtime or SDK available on your `PATH`, because the extension launches a Roslyn-based analyzer through `dotnet`.
 
 ## Usage
 
 1. Open a C# source file in VS Code.
 2. Open the Command Palette.
-3. Run `csharpvisualizer: Open C# Visualizer`.
+3. Run `C# Visualizer: Open Visualizer`.
 4. Inspect the generated graph in the webview panel.
 5. Click a node to jump to the corresponding code, or move the cursor in the editor to update the highlighted element.
 
@@ -68,7 +68,7 @@ For local extension development in VS Code:
 To create a VSIX package:
 
 ```bash
-npx vsce package
+npx @vscode/vsce package
 ```
 
 ## Project Structure

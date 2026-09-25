@@ -1,4 +1,5 @@
 import { spawnSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -10,6 +11,9 @@ const analyzerProject = path.join(
   "roslynAnalyzer.csproj",
 );
 const outputDirectory = path.join(workspaceRoot, "analyzer-dist");
+
+// Remove stale files from previous builds so they are not packaged.
+fs.rmSync(outputDirectory, { recursive: true, force: true });
 
 const result = spawnSync(
   "dotnet",

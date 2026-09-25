@@ -1,14 +1,23 @@
 {
   "name": "csharpvisualizer",
   "displayName": "C# Visualizer",
-  "description": "",
-  "version": "0.0.5",
+  "description": "Visualize C# code structure in a flowchart style",
+  "version": "0.0.6",
   "license": "MIT",
-  "publisher": "ChristineBell",
+  "author": {
+    "name": "Christine Bell"
+  },
+  "contributors": [
+    {
+      "name": "Andreas Bilke",
+      "email": "andreas.bilke@fh-salzburg.ac.at"
+    }
+  ],
+  "publisher": "fhs-ct",
   "icon": "./icon.png",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.ct.fh-salzburg.ac.at/fhs50537/bachelorarbeit.git"
+    "url": "https://github.com/FHS-Creative-Technologies/csharpvizualizer"
   },
   "engines": {
     "vscode": "^1.108.1"
@@ -25,20 +34,30 @@
     "THIRD_PARTY_LICENSES.md"
   ],
   "categories": [
-    "Other"
+    "Visualization",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "csharp",
+    "c#",
+    "flowchart",
+    "code structure",
+    "graph"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "csharpvisualizer.webview",
-        "title": "csharpvisualizer: Open C# Visualizer"
+        "category": "C# Visualizer",
+        "title": "Open Visualizer"
       }
     ]
   },
   "scripts": {
     "build:web": "npm --prefix ./web run build",
     "build:analyzer": "node ./scripts/build-analyzer.mjs",
+    "licenses": "node ./scripts/generate-third-party-licenses.mjs",
     "vscode:prepublish": "npm run build:web && npm run build:analyzer && npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",

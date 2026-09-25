@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "csharpvisualizer" extension will be documented in this file.
+## [Version 0.0.6]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- Publish extension under fhs-ct organization.
+- New extension icon.
+- Support .NET 9 and newer runtimes (e.g. .NET 10) for the bundled analyzer.
+- Rename command to `C# Visualizer: Open Visualizer`.
+- Reduce package size by removing unused analyzer files.
+- Add complete third-party license notices.

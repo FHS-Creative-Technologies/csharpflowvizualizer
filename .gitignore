@@ -1,0 +1,6 @@
+csharpvisualizer-*.vsix
+node_modules/
+analyzer-dist/
+out/
+.idea/
+analyzer-dist/

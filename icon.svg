@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9B4F96"/>
+      <stop offset="1" stop-color="#512BD4"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- edges -->
+  <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M64 46 V56"/>
+    <path d="M52 68 H36 V88"/>
+    <path d="M76 68 H92 V88"/>
+  </g>
+  <!-- root node with C# -->
+  <rect x="32" y="12" width="64" height="34" rx="9" fill="#fff"/>
+  <path d="M60 22.5 A 8.5 8.5 0 1 0 60 35.5" fill="none" stroke="#68217A" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#68217A" stroke-width="3" stroke-linecap="round">
+    <path d="M70 21 L68 38"/><path d="M78 21 L76 38"/>
+    <path d="M65 26 H82"/><path d="M64 33 H81"/>
+  </g>
+  <!-- decision -->
+  <path d="M64 56 L76 68 L64 80 L52 68 Z" fill="#fff" transform="translate(0 0)"/>
+  <!-- leaf nodes -->
+  <rect x="20" y="88" width="32" height="24" rx="7" fill="#fff" opacity="0.95"/>
+  <rect x="76" y="88" width="32" height="24" rx="7" fill="#fff" opacity="0.95"/>
+  <g stroke="#9B4F96" stroke-width="3" stroke-linecap="round">
+    <path d="M27 97 H45"/><path d="M27 104 H39"/>
+    <path d="M83 97 H101"/><path d="M83 104 H95"/>
+  </g>
+</svg>
