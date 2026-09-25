@@ -17,7 +17,7 @@
   "icon": "./icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FHS-Creative-Technologies/csharpvizualizer"
+    "url": "https://github.com/FHS-Creative-Technologies/csharpflowvizualizer"
   },
   "engines": {
     "vscode": "^1.108.1"
